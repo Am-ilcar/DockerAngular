@@ -1,6 +1,5 @@
-FROM node:lts
+FROM node:18.17
 RUN apt update
-RUN apt install git
 RUN mkdir /workspaces
 WORKDIR /workspaces
 RUN npm install -g @angular/cli
